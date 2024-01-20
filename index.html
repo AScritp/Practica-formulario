@@ -40,24 +40,25 @@
         </div>
        <div class="DOMCUMENTO-IDENTIDAD">
         <select na id="opciones" onchange="cambiarRestricciones()" required>
-          <option value="opcion1">Opción 1</option>
-          <option value="opcion2">Opción 2</option>
+          <option value="opcion1">DNI</option>
+          <option value="opcion2">NIE</option>
         </select>
         <input
         id="campo" 
         type="text"
         name="DOMCUMENTO-de-ID"
+        placeholder="Documento de identidad"
         required
         >
        </div>
-
+       <p><span>Numero de invitados:</span>
        <select id="acompañantes" onchange="renderizarCampos()" required>
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
       </select>
-
+      </p>
       <div id="camposExtra"></div>
       
       <button type="submit">Enviar</button>
