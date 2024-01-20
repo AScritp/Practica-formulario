@@ -69,23 +69,24 @@ function cambiarRestricciones() {
         const DOCUMENTOID= document.createElement("div");
         DOCUMENTOID.className="DOMCUMENTO-IDENTIDAD";
 
-        var nuevoSelect = document.createElement("select");
+        const nuevoSelect = document.createElement("select");
         nuevoSelect.id = "opciones";
         nuevoSelect.onchange = cambiarRestricciones;
-        var opcion1 = document.createElement("option");
+        const opcion1 = document.createElement("option");
         opcion1.value = "opcion1";
         opcion1.textContent = "DNI";
         nuevoSelect.appendChild(opcion1);
-        var opcion2 = document.createElement("option");
+        const opcion2 = document.createElement("option");
         opcion2.value = "opcion2";
         opcion2.textContent = "NIE";
         nuevoSelect.appendChild(opcion2);
       
     
-        var nuevoInput = document.createElement("input");
+        const nuevoInput = document.createElement("input");
         nuevoInput.id = "campo";
         nuevoInput.type = "text";
         nuevoInput.name = "DOMCUMENTO-de-ID"
+        nuevoInput.placeholder ="Documento de identidad"
         nuevoInput.required = true;
         DOCUMENTOID.appendChild(nuevoSelect);
         DOCUMENTOID.appendChild(nuevoInput);
